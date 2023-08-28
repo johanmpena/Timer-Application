@@ -1,0 +1,31 @@
+.footer {
+    display: block;
+    position: fixed;
+    border: 2px solid black;
+
+    /* NEED TO SET LEFT: 0 AND BOTTOM TO 0
+     * TO INSURE THAT THE FOOTER STAYS AT
+     * THE BOTTOM OF THE VIEW PORT.
+     ------------------------------------- */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: DodgerBlue;
+    text-align: center;
+}
+
+.copyright {
+    padding: 5px;
+    width: 100%;
+    background-color: white;
+    color: DodgerBlue;
+}
+
+.wrapper-container {
+    display: block;
+}
+
+.inside-wrapper-container {
+    display: inline-block;
+}

@@ -1,0 +1,59 @@
+/* ADD WHITE BACKGROUND COLOR TO THE NAVIGATION BAR*/
+.navbar {
+    height: 7%;
+    background-color: white;
+    border: 2px solid black;
+
+    /* NEED TO ADD MARGIN: 0 AND PADDING 0
+     * TO .NAVBAR AND .NAVBAR UL OTHERWISE
+     * IT WILL LEAVE EMPTY WHITE SPACE ON THE
+     * EDGES OF THE NAVIGATION BAR.
+     ---------------------------------------- */
+    margin: 0;
+    padding: 0;
+
+    /* PREVENT UNWANTED HORIZONTAL SCROLLING
+     * AND EXTRA WHITESPACES IN YOUR PROJECT
+     * WHEN ELEMENTS EXIST OUTSIDE VIEWPORT.
+     --------------------------------------- */
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style: none;
+
+    /* NEED TO ADD MARGIN: 0 AND PADDING 0
+         * TO .NAVBAR AND .NAVBAR UL OTHERWISE
+         * IT WILL LEAVE EMPTY WHITE SPACE ON THE
+         * EDGES OF THE NAVIGATION BAR.
+         ---------------------------------------- */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    text-align: center;
+    padding: 25px 25px;
+    text-decoration: none;
+}
+
+/* CHANGE THE COLOR OF LINKS ON HOVER */
+.navbar a:hover {
+    background-color: DodgerBlue;
+    color: white;
+}
+
+/* CHANGE THE COLOR, STYLE, AND POSITION OF TEXT
+ * INSIDE THE NAVBAR. */
+.navbar h1 {
+    font-family: "Comic Sans MS","Comic Sans", impact, fantasy;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
