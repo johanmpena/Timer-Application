@@ -11,7 +11,6 @@ public class HomeContoller {
 
     @RequestMapping("/")
     public String getHome(){
-
-        return "index.html";
+        return "index";
     }
 }

@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <link rel="stylesheet" th:href="@{/css/styles.css}"/>
         <link rel="stylesheet" th:href="@{/css/navbar.css}"/>
-        <link rel="stylesheet" th:href="@{/css/page-content.css}"/>
+        <link rel="stylesheet" th:href="@{/css/index-content.css}"/>
         <link rel="stylesheet" th:href="@{/css/footer.css}"/>
     </head>
     <body>
@@ -18,8 +18,8 @@
         <!--  ------------------------------------------------------------- -->
         <div class ="navbar">
             <ul class="me-auto">
-                <li><a href="#HOME"><i class="bi bi-house">Home</i></a></li>
-                <li><a href="#GOALS"><i class="bi bi-star-fill">Goals</i></a></li>
+                <li><a th:href="@{/}"><i class="bi bi-house">Home</i></a></li>
+                <li><a th:href="@{/goals}"><i class="bi bi-star-fill">Goals</i></a></li>
                 <li><a href="#STATS"><i class="bi bi-graph-up-arrow">Stats</i></a></li>
             </ul>
 
@@ -28,7 +28,6 @@
         <!-- END OF NAVBAR                                                  -->
 
         <div id="page-container">
-            <!-- COMING SOON                                                -->
             <div id="page-content">
                 <!-- TASK-LIST                                              -->
                 <div class="task-list">
@@ -42,22 +41,15 @@
                     <!-- * FOR TESTING PURPOSES.                            -->
                     <!-- -------------------------------------------------- -->
                     <div class="task">
-                        <div class="task-name"><h1>name</h1></div>
-
-                        <div class="play-btn" onclick="this.classList.toggle('active')">
-                            <div class="background" x="0" y="0" width="50" height="50"></div>
-                            <div class="icon" >
-                                <div class="left side" x="0"y="0" width="50" height="50" fill="#fff"></div>
-                                <div class="right side" x="0" y="0" width="50" height="50" fill="#fff"></div>
-                                <div class="pointer"></div>
-                            </div>
+                        <div class="name">
+                            <h1>name</h1>
                         </div>
                     </div>
                     <div class="task">
-                        <p>jkakjafds</p>
+
                     </div>
                     <div class="task">
-                        <p>jkakjafds</p>
+
                     </div>
 
                 </div>

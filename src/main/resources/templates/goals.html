@@ -1,0 +1,126 @@
+<html xmlns:th="http://thymeleaf.org">
+<html>
+    <head>
+        <title>Goal Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" th:href="@{/css/styles.css}"/>
+        <link rel="stylesheet" th:href="@{/css/navbar.css}"/>
+        <link rel="stylesheet" th:href="@{/css/goals-content.css}"/>
+        <link rel="stylesheet" th:href="@{/css/footer.css}"/>
+    </head>
+    <body>
+        <!-- NAVBAR                                                         -->
+        <!--  ------------------------------------------------------------- -->
+        <div class ="navbar">
+            <ul class="me-auto">
+                <li><a th:href="@{/}"><i class="bi bi-house">Home</i></a></li>
+                <li><a th:href="@{/goals}"><i class="bi bi-star-fill">Goals</i></a></li>
+                <li><a href="#STATS"><i class="bi bi-graph-up-arrow">Stats</i></a></li>
+            </ul>
+            <h1>GOAL PAGE!!!</h1>
+        </div>
+        <!-- END OF NAVBAR                                                  -->
+
+        <div id="page-container">
+            <div id="page-content">
+                <!-- GOAL-LIST                                              -->
+                <div class="goal-list">
+                    <div id="goal-heading">
+                        <h1>Goal LIST: </h1>
+                    </div>
+                    <!-- FOR EACH LOOP SECTION                              -->
+                    <!-- * COMING SOON                                      -->
+                    <!-- * WILL BE USED TO DISPLAY ALL USER GOALS FROM       -->
+                    <!-- * DATABASE, FOR NOW JUST ONE GOAL WILL BE USE    -->
+                    <!-- * FOR TESTING PURPOSES.                            -->
+                    <!-- -------------------------------------------------- -->
+                    <div class="goal">
+                        <div class="name">
+                            <h1>name</h1>
+                        </div>
+
+                        <div class="pie" style="--p:60;--b:30px;--c:DodgerBlue;">
+                            60%
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END OF TASK-LIST                                       -->
+                <!-- ALL OTHER PAGE CONTENT                                 -->
+            </div>
+
+            <!-- FOOTER                                                     -->
+            <!-- * ACQUIRED FROM:                                           -->
+            <!--   https://mdbootstrap.com/docs/standard/navigation/footer/ -->
+            <!--  --------------------------------------------------------- -->
+            <div class="footer">
+                <div class="wrapper-container">
+                    <!-- Grid container                                         -->
+                    <!-- ------------------------------------------------------ -->
+                    <div class="container p-4 pb-0">
+                        <!-- Section: Social media                              -->
+                        <section class="mb-4">
+                            <!-- FACEBOOK                                       -->
+                            <a
+                                    class="btn btn-primary btn-floating m-1"
+                                    style="background-color: #3b5998";
+                                    href="#!"
+                                    role="button"
+                            ><i class="bi bi-facebook"></i></a>
+
+                            <!-- TWITTER                                        -->
+                            <a
+                                    class="btn btn-primary btn-floating m-1"
+                                    style="background-color: #55acee";
+                                    href="#!"
+                                    role="button"
+                            ><i class="bi bi-twitter"></i></a>
+
+                            <!-- GOOGLE                                         -->
+                            <a
+                                    class="btn btn-primary btn-floating m-1"
+                                    style="background-color: #dd4b39";
+                                    href="#!"
+                                    role="button"
+                            ><i class="bi bi-google"></i></a>
+
+                            <!-- INSTAGRAM                                      -->
+                            <a
+                                    class="btn btn-primary btn-floating m-1"
+                                    style="background-color: #ac2bac";
+                                    href="#!"
+                                    role="button"
+                            ><i class="bi bi-instagram"></i></a>
+
+                            <!-- LINKEDIN                                       -->
+                            <a
+                                    class="btn btn-primary btn-floating m-1"
+                                    style="background-color: #0082ca";
+                                    href="#!"
+                                    role="button"
+                            ><i class="bi bi-linkedin"></i></a>
+
+                            <!-- GITHUB                                         -->
+                            <a
+                                    class="btn btn-primary btn-floating m-1"
+                                    style="background-color: #3b5998";
+                                    href="#!"
+                                    role="button"
+                            ><i class="bi bi-github"></i></a>
+                        </section>
+                        <!-- END OF SOCIAL MEDIA SECTION                        -->
+                    </div>
+                    <div class="copyright">
+                        <p>@ 2023 Copyright: Johan's Github Portfolio! </p>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF FOOTER                                              -->
+        </div>
+        <!-- END OF PAGE-CONTAINER                                          -->
+    </body>
+</html>

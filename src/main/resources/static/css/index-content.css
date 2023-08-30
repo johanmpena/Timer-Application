@@ -1,0 +1,45 @@
+.task-list {
+    display: block;
+    overflow-x: hidden;
+    position: absolute;
+    left: 33%;
+    top: 10%;
+}
+
+.task {
+    border-radius: 15px;
+    height: 10vh;
+    width: 33vw;
+    margin-bottom: 10px;
+    position: relative;
+
+    background-color: White;
+    color: DodgerBlue;
+    border: 2px solid black;
+}
+
+ .task-heading {
+    border-radius: 15px;
+    height: 5vh;
+    width: 15vw;
+    margin: 5px;
+
+    background-color: White;
+    color: Black;
+    border: 2px solid black;
+    text: bold;
+    text-align: center;
+}
+
+.task-name {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+.stop-and-play {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+
