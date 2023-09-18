@@ -13,6 +13,8 @@
     margin-bottom: 10px;
     position: relative;
 
+    font-size: 1.0em;
+
     background-color: White;
     color: DodgerBlue;
     border: 2px solid black;
@@ -31,11 +33,6 @@
     text-align: center;
 }
 
-.task-name {
-    position: absolute;
-    top: 15%;
-    left: 5%;
-}
 
 .stop-and-play {
     position: absolute;

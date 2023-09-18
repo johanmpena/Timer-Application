@@ -40,13 +40,25 @@
                     <!-- * DATABASE, FOR NOW JUST THREE TASK WILL BE USE    -->
                     <!-- * FOR TESTING PURPOSES.                            -->
                     <!-- -------------------------------------------------- -->
-                    <div class="task">
-                        <div class="name">
-                            <h1>name</h1>
-                        </div>
-                    </div>
-                    <div class="task">
 
+                    <tr th:each="task:*{getTaskList}" th:object="${task}">
+                        <div class="task">
+                            <td><label th:text="${task.name}">name</label></td>
+                        </div>
+                    </tr>
+
+                    <!-- CREATE TASK SECTION                                -->
+                    <!-- * WILL BE MOVE TO AN MORE AESTHETICALLY            -->
+                    <!-- * LOCATION LATER, FOR NOW IT WILL BE USED          -->
+                    <!-- * FOR TESTING PURPOSES.                            -->
+                    <!-- -------------------------------------------------- -->
+                    <div class="create-list">
+<!--                        <form  action="@{/addNew}" th:object="${task}" method="post">-->
+<!--                            <input type="text" th:field="*{task}">-->
+<!--                            <button type="submit" class="btn btn-info col-2">-->
+<!--                                Save-->
+<!--                            </button>-->
+<!--                        </form>-->
                     </div>
                     <div class="task">
 
